@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 import { environment } from '../environments/environment';
 
 // Components
-import { AppComponent } from './app.component';
+import { TextFromBackendComponent } from './text-from-backend/text-from-backend.component';
 
 // ngrx modules
 import {
@@ -62,7 +62,7 @@ import 'hammerjs';
 @NgModule({
   declarations: [
     // components
-    AppComponent
+    TextFromBackendComponent
   ],
   imports: [
     // Angular
@@ -91,6 +91,6 @@ import 'hammerjs';
     // when you want to not have the devtools in production mode
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [TextFromBackendComponent]
 })
 export class AppModule { }
