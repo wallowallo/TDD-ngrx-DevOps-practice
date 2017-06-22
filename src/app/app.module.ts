@@ -36,28 +36,28 @@ import {
 } from '@angular/material';
 import 'hammerjs';
 
-// this is required for AOT compile
-//export interface State {
-//  todos;
-//  filter;
-//  undoable;
-//}
+//  this is required for AOT compile
+// export interface State {
+//   todos;
+//   filter;
+//   undoable;
+// }
 //
-//const reducers = {
-//  todos: undoable(todos),
-//  filter
-//};
+// const reducers = {
+//   todos: undoable(todos),
+//   filter
+// };
 //
-//const developmentReducer: ActionReducer<State> = compose(combineReducers)(reducers);
-//const productionReducer: ActionReducer<State> = combineReducers(reducers);
+// const developmentReducer: ActionReducer<State> = compose(combineReducers)(reducers);
+// const productionReducer: ActionReducer<State> = combineReducers(reducers);
 //
-//export function reducer(state: any, action: any) {
-//  if (environment.production) {
-//    return productionReducer(state, action);
-//  } else {
-//    return developmentReducer(state, action);
-//  }
-//}
+// export function reducer(state: any, action: any) {
+//   if (environment.production) {
+//     return productionReducer(state, action);
+//   } else {
+//     return developmentReducer(state, action);
+//   }
+// }
 
 @NgModule({
   declarations: [
@@ -84,10 +84,11 @@ import 'hammerjs';
     MdProgressSpinnerModule,
     MdProgressBarModule,
     // ngrx
-    //StoreModule.provideStore(reducer),
+    // StoreModule.provideStore(reducer),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
     // EffectsModule.run(BookEffects)
-    //!environment.production ? StoreDevtoolsModule.instrumentOnlyWithExtension() : [] when you want to not have the devtools in production mode
+    // !environment.production ? StoreDevtoolsModule.instrumentOnlyWithExtension() : []
+    // when you want to not have the devtools in production mode
   ],
   providers: [],
   bootstrap: [AppComponent]
